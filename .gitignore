@@ -1,0 +1,17 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Cypress cache
+cypress/videos/
+cypress/screenshots/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Cypress example folders (do not version)
+automation-cypress/cypress/e2e/1-getting-started/
+automation-cypress/cypress/e2e/2-advanced-examples/
