@@ -1,34 +1,26 @@
-# Automação com Cypress
+# Automation Cypress – QA Portfolio
 
-Este projeto demonstra o uso do **Cypress** para automação de testes end-to-end (E2E)
-em aplicações web.
+Este projeto faz parte do meu QA Portfolio e tem como objetivo demonstrar, de forma simples e objetiva, o uso do Cypress para testes automatizados End-to-End (E2E).
 
-O foco é validar fluxos críticos do usuário de forma rápida, confiável
-e com fácil manutenção.
+## Objetivo do teste
 
----
+Validar o acesso à página inicial do site de exemplos do Cypress e verificar se o conteúdo principal é exibido corretamente ao usuário.
 
-## 🧪 O que é o Cypress
+O teste cobre:
+- Abertura da aplicação no navegador
+- Navegação para a URL alvo
+- Validação de elemento visível na tela (“Kitchen Sink”)
 
-Cypress é uma ferramenta de automação de testes E2E voltada para aplicações web modernas.
-Ele executa os testes diretamente no navegador, oferecendo feedback rápido
-e excelente capacidade de debug.
+## Teste implementado
 
----
+- Tipo: E2E (End-to-End)
+- Arquivo: `cypress/e2e/login.cy.js`
+- Ferramenta: Cypress
 
-## ✅ Quando usar Cypress
+O cenário simula um fluxo básico de acesso inicial, servindo como base para expansão futura com cenários mais complexos.
 
-- Testes de fluxo completo do usuário
-- Aplicações web modernas (SPA)
-- Testes que exigem rapidez e boa visibilidade de falhas
+## Como executar o projeto
 
----
-
-## ⚠️ Limitações
-
-- Não indicado para testes mobile nativos
-- Não substitui testes unitários ou de integração
-
----
-
-📹 Vídeo demonstrativo: (link será adicionado)
+1. Instalar as dependências:
+   ```bash
+   npm install
