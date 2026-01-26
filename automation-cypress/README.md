@@ -1,26 +1,32 @@
-# Automation Cypress – QA Portfolio
+# Automation Cypress
 
-Este projeto faz parte do meu QA Portfolio e tem como objetivo demonstrar, de forma simples e objetiva, o uso do Cypress para testes automatizados End-to-End (E2E).
+Projeto de automação E2E utilizando Cypress, com foco em validações básicas de interface e navegação.
 
-## Objetivo do teste
+## Objetivo
+Demonstrar conhecimento prático na estruturação de testes automatizados E2E, cobrindo:
+- organização de projeto
+- configuração do Cypress
+- escrita de testes legíveis e objetivos
+- execução e análise de resultados
 
-Validar o acesso à página inicial do site de exemplos do Cypress e verificar se o conteúdo principal é exibido corretamente ao usuário.
+## Tecnologias
+- Cypress
+- JavaScript
+- Node.js
 
-O teste cobre:
-- Abertura da aplicação no navegador
-- Navegação para a URL alvo
-- Validação de elemento visível na tela (“Kitchen Sink”)
+## Estrutura
+- `cypress/e2e/login.cy.js`: teste E2E simples validando o acesso à página inicial do site de exemplo do Cypress e a renderização do conteúdo principal.
+- `cypress.config.js`: configuração do Cypress para execução de testes E2E.
+- `package.json`: dependências e scripts do projeto.
 
 ## Teste implementado
+O teste existente valida:
+- acesso à URL https://example.cypress.io
+- verificação da visibilidade do título principal (“Kitchen Sink”)
 
-- Tipo: E2E (End-to-End)
-- Arquivo: `cypress/e2e/login.cy.js`
-- Ferramenta: Cypress
+O objetivo do teste é demonstrar domínio da sintaxe básica do Cypress (`describe`, `it`, `cy.visit`, `cy.contains`, `should`).
 
-O cenário simula um fluxo básico de acesso inicial, servindo como base para expansão futura com cenários mais complexos.
-
-## Como executar o projeto
-
-1. Instalar as dependências:
-   ```bash
-   npm install
+## Execução
+```bash
+npm install
+npx cypress open
